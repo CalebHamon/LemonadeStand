@@ -22,13 +22,19 @@ public class Lemonade {
         System.out.println("WHAT WOULD YOU LIKE?");
         input = scan.nextLine();
         if(input.toUpperCase() == pitcher) {
-            System.out.println("HOW MUCH WOULD YOU LIKE?");
-            inputMath = scan.nextInt();
-            mrWorldWide = inputMath*2;
-            yNeg = givenMon - mrWorldWide;
-            if(!(yNeg < 0)) {
-                givenMon = yNeg;
-
+            for (int i = 0; i > 2; i++){
+                System.out.println("HOW MUCH WOULD YOU LIKE?");
+                inputMath = scan.nextInt();
+                mrWorldWide = inputMath*2;
+                yNeg = givenMon - mrWorldWide;
+                if(!(yNeg < 0)) {
+                    givenMon = yNeg;
+                    manyP = inputMath;
+                    i = 1;
+                }
+                else {
+                    i = 4;
+                }
             }
         }
 
